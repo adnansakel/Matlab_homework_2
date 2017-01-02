@@ -1,6 +1,7 @@
 function filter = computeFilter(mids,freqs)
-%This function computes the triangular filters the first and last filter
-%values are dummy and only 24 within them are useful
+%This function computes the triangular filters as cell
+%the first and last filter values are dummy and only 24 within
+%them are useful
 filter = cell(length(mids),1);
 filter {1,1} = [1;1;1]; %some dummy values
 filter{end,1} = [1;1;1]; %some dummy values
