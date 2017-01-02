@@ -34,7 +34,7 @@ k=24;
 edges = melfreqs(min(freqs), max(freqs), k)
 %% E2 Computation of the mids of the triangular filters
 % call the function computeMids
-
+computeMids(freqs,edges);
 %% E3 Computation of the mel-filter bank
 % call the function computeFilter
 
