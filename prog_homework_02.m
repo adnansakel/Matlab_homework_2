@@ -29,7 +29,9 @@ title(['Spectrogram of "',audiofile '"'])
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% E1 Computation of equally spaced points on the mel-scale
 % call the function melfreqs
-
+% assuming k=24
+k=24;
+edges = melfreqs(min(freqs), max(freqs), k)
 %% E2 Computation of the mids of the triangular filters
 % call the function computeMids
 
