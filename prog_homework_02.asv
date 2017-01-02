@@ -43,13 +43,8 @@ filter{length(mids),1} = [];%deleting dummy values
 
 %subplot(1,24,1)
 figure(2);
-title('Triangular filters');
-xlabel('Critical band (filters) f[k]');
-ylabel('Amplitude');
 hold on;
-%Ploting all the filters except first and last one as they contain dummy
-%values
-for i = 2: length(filter)-1
+for i = 2: le
     plot(filter{i,1});
 end
 hold off;
