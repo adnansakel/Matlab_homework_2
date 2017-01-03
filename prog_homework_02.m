@@ -29,7 +29,7 @@ title(['Spectrogram of "',audiofile '"'])
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% E1 Computation of equally spaced points on the mel-scale
 % call the function melfreqs
-% assuming k=24
+% assuming k=24l
 k=24;
 edges = melfreqs(min(freqs), max(freqs), k)
 %% E2 Computation of the mids of the triangular filters
@@ -38,8 +38,9 @@ mids = computeMids(freqs,edges);
 %% E3 Computation of the mel-filter bank
 % call the function computeFilter
 filter = computeFilter(mids,freqs);
-filter{1,1} = [];%deleting dummy values
-filter{length(mids),1} = [];%deleting dummy values
+
+%removing dummy values
+filter([1 size(filter,1)],:)=[];
 
 %subplot(1,24,1)
 figure(2);
@@ -49,13 +50,13 @@ ylabel('Amplitude');
 hold on;
 %Ploting all the filters except first and last one as they contain dummy
 %values
-for i = 2: length(filter)-1
-    plot(filter{i,1});
+for i = 1: size(filter,1)
+    plot(filter{i});
 end
 hold off;
 %% E4 Computation of the mel-filtered spectrum
 % call the function melFilter
-
+melSpec = melFilter(spec, filter);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Plot of the mel-filtered spectrum
 figure('Name',['mel-filtered Spectrogram of "',audiofile '"'])
