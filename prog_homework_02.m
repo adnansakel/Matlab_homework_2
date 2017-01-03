@@ -31,7 +31,7 @@ title(['Spectrogram of "',audiofile '"'])
 % call the function melfreqs
 % assuming k=24l
 k=24;
-edges = melfreqs(min(freqs), max(freqs), k)
+edges = melfreqs(min(freqs), max(freqs), k);
 %% E2 Computation of the mids of the triangular filters
 % call the function computeMids
 mids = computeMids(freqs,edges);
