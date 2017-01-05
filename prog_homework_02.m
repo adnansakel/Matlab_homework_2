@@ -50,8 +50,11 @@ ylabel('Amplitude');
 hold on;
 %Ploting all the filters except first and last one as they contain dummy
 %values
+% x axis values
+x= linspace(0, max(freqs), size(filter{1},2));
+
 for i = 1: size(filter,1)
-    plot(filter{i});
+    plot(x, filter{i});
 end
 hold off;
 %% E4 Computation of the mel-filtered spectrum
