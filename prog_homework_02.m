@@ -1,3 +1,5 @@
+%Soumya Siladitya Mishra 387631
+%Jahidul Adnan Sakel 387590
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %% Speech Communication                                                 
 % %% PROGRAMMING HOMEWORK II

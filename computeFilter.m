@@ -1,3 +1,5 @@
+%Soumya Siladitya Mishra 387631
+%Jahidul Adnan Sakel 387590
 function filter = computeFilter(mids,freqs)
 %This function computes the triangular filters as cell
 %the first and last filter values are dummy and only 24 within

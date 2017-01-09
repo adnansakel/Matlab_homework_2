@@ -1,3 +1,5 @@
+%Soumya Siladitya Mishra 387631
+%Jahidul Adnan Sakel 387590
 function melSpec = melFilter(spec, filter)
 %melFilter uses the triangular filter 'filter' from exercise E3 and 
 % the linear spectrum of the signal spec to compute speech features in the 

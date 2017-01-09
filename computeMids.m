@@ -1,3 +1,5 @@
+%Soumya Siladitya Mishra 387631
+%Jahidul Adnan Sakel 387590
 function mids = computeMids(freqs, edges)
 %This function finds the closest frequency support points from freqs
 % that are equally distant in mel domain

@@ -1,3 +1,5 @@
+%Soumya Siladitya Mishra 387631
+%Jahidul Adnan Sakel 387590
 function edges = melfreqs(fmin, fmax, k)
 % mesfreqs computes K+2 equally spaced points in the mel frequency
 % scale
