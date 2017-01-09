@@ -11,7 +11,7 @@ mFmin = 2595*log10(1+(fmin/700));
 mFmax = 2595*log10(1+(fmax/700));
 
 % equally spaced values in mel frequency scale
-mEdges =linspace(fmin, fmax, k+2);
+mEdges =linspace(mFmin, mFmax, k+2);
 
 % transformation of mel frequency to linear frequency by the inverse mel
 % function

@@ -45,8 +45,8 @@ filter([1 size(filter,1)],:)=[];
 %subplot(1,24,1)
 figure(2);
 title('Triangular filters');
-xlabel('Critical band (filters) f[k]');
-ylabel('Amplitude');
+xlabel('Frequency (Hz) (Filter Banks)');
+ylabel('Weight');
 hold on;
 %Ploting all the filters except first and last one as they contain dummy
 %values

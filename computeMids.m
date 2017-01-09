@@ -5,7 +5,7 @@ mids = zeros(1,length(edges));%initializing mids as the same size of edges
 mids(1) = 1;%Assigning 1 according to problem statement
 mids(1,end) = edges(1,end); %Assigning according to problem statement
 % Calculating the mids values which are most close to edges values in freqs
-for i = 1 : length(edges)-2
+for i = 2 : length(edges)-1
     [value,index] = min(abs(freqs-edges(i)));
-    mids(i+1) = freqs(index);
+    mids(i) = freqs(index);
 end
